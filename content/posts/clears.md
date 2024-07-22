@@ -1,7 +1,7 @@
 ---
 title: "Clears"
 date: 2024-07-06T18:40:00-03:00
-draft: false
+draft: true
 ---
 
 This page is meant to be a big showcase of things i've done in videogames. On the next section, there's a simple table of contents for you to see each individual game.
