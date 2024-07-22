@@ -1,7 +1,7 @@
 ---
 title: "Clears"
 date: 2024-07-06T18:40:00-03:00
-draft: true
+draft: false
 ---
 
 This page is meant to be a big showcase of things i've done in videogames. On the next section, there's a simple table of contents for you to see each individual game.
@@ -9,7 +9,6 @@ This page is meant to be a big showcase of things i've done in videogames. On th
 ## Table of contents
 
 - [Minecraft](#minecraft)
-- [Terraria]()
 
 ## Minecraft
 Completed 100% of the achievements on the legacy console edition some years ago and on 1.16 a year ago. I don't really play vanilla minecraft nowadays because i find it fun to grind modpacks, specially those with a quest system.
