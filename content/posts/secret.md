@@ -2,7 +2,7 @@
 title: "(not)secret test file"
 custom_js: [mouse_coords]
 date: 2024-07-06T17:06:21-03:00
-draft: true
+draft: false
 ---
 
 This is a somewhat strange post. You might not even be allowed in here. Everything displayed here should be working without any issues whatsoever.
