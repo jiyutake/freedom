@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Freedom</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Freedom</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jul 2024 17:06:21 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>secret</title>
+      <link>http://localhost:1313/posts/secret/</link>
+      <pubDate>Sat, 06 Jul 2024 17:06:21 -0300</pubDate>
+      <guid>http://localhost:1313/posts/secret/</guid>
+      <description>This is a somewhat strange post. You might not even be allowed in here. Everything displayed here should be working without any issues whatsoever.&#xA;Headings h1 Wow that&amp;rsquo;s really big. as the size of the title even! Don&amp;rsquo;t use this on places other than the page title, it would be a bit awkward&amp;hellip;&#xA;h2 Not that small i&amp;rsquo;d say. Use this for most sections in articles.&#xA;h3 Subdivisions.&#xA;Lists item item item with a cool number Tricks you into believing this contains really useful information item with a pair number.</description>
+    </item>
+  </channel>
+</rss>
