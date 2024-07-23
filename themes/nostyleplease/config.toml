@@ -61,7 +61,7 @@
         enableDefault = false
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = false
+      unsafe = true
       xhtml = false
 
 [params]
