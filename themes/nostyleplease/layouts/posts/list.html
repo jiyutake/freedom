@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ partial "back_link.html" .}}
+
+<h1>{{ .Title }}</h1>
+On this page is listed all the posts made so far. Have fun reading!
+
+{{ .Content }}
+{{ partial "post_list.html" (dict "context" . "section" .Section)}}
+{{ end }}
