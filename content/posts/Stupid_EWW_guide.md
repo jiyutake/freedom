@@ -1,7 +1,11 @@
 ---
-title: "Stupid EWW guide[WIP]"
+title: "EWW guide[WIP]"
 draft: false
 ---
+
+# Warning
+This is a guide for [eww](https://github.com/elkowar/eww) i have been writing for the past few months, and isn't finished, but i still thought about posting it. Be warned that this isn't polished and still lacks things such as workspace module examples.
+
 # Introduction
 This is a simple, comprehensive and short guide on how to make a small Elkowar's Wacky Widgets setup, including a couple of basic widgets with some sample code. This is geared towards absolute beginners on EWW and will most likely be redundant information if you're already familiar with it.
 
