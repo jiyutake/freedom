@@ -134,11 +134,3 @@ Let's begin defining the widget with Yuck:
   (container
     (workspace_button :cmd )))
 ```
-
-todo:
-- [ ] Workspaces
-- [ ] Revealers (yet to learn)
-- [ ] Your own widget
-- [ ] External scripts
-- [ ] Good peactices and references
-- [ ] Credit vivi :3
