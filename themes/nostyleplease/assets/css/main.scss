@@ -1,7 +1,6 @@
 // -------------- THEME SWITCHER -------------- //
 @mixin theme($--bg-color, $--primary-text-color, $--link-color, $--visited-link-color, $--disabled) {
   background-color: $--bg-color;
-
   color: $--primary-text-color;
 
   a {
@@ -23,14 +22,18 @@
   figcaption {
     color: $--primary-text-color;
   }
+
+  .button a {
+    color: $--link-color;
+  }
 }
 
 @mixin dark-appearance {
-  @include theme(#000000, #DDDDDD, #4070AA, #705080, rgba(221, 221, 221, 0.5));
+  @include theme(#0B0B0E, #C6C6D2, #22445C, #343050, rgba(198, 198, 210, 0.5));
 }
 
 @mixin light-appearance {
-  @include theme(#000000, #DDDDDD, #4070AA, #705080, rgba(221, 221, 221, 0.5));
+  @include theme(#0B0B0E, #C6C6D2, #22445C, #343050, rgba(198, 198, 210, 0.5));
 }
 
 /*
@@ -45,25 +48,56 @@ body[a="light"] { @include light-appearance; }
 @media (prefers-color-scheme: dark) {
   body[a="auto"] { @include dark-appearance; }
   h1#fancy {
-    background: linear1-gradient(275deg, #DDDDDD,  #4070AA);
-    background: -webkit-linear-gradient(275deg, #DDDDDD,  #4070AA);
+    background: linear1-gradient(275deg, #6868A5,  #404080);
+    background: -webkit-linear-gradient(275deg, #6868A5,  #404080);
   }
 }
 
 @media (prefers-color-scheme: light) {
   body[a="auto"] { @include light-appearance; }
   h1#fancy {
-    background: linear1-gradient(275deg, #DDDDDD,  #2060BB);
-    background: -webkit-linear-gradient(275deg, #DDDDDD,  #2060BB);
+    background: linear1-gradient(275deg, #6868A5,  #404080);
+    background: -webkit-linear-gradient(275deg, #6868A5,  #404080);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 // -------------------------------------------- //
 
 html { height: 100%; }
 
+div#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  pointer-events: none;
+  z-index: 99;
+
+  /* thanks https://github.com/katelyynn for the noise png(i tried generating my own noise but it didn't work quite well... sorry about that)*/
+  background-image: url(https://raw.githubusercontent.com/jiyutake/freedom/master/themes/nostyleplease/assets/noise.png);
+  opacity: 25%;
+}
+
+div#bg2 {
+  position: absolute;
+  top:0;left:0;right:0;
+  height: 100vh;
+  z-index: -1;
+  filter: hue-rotate(220deg) blur(40em);
+  background-image: url(https://images.unsplash.com/photo-1706174131367-bb0e7e1212a5);
+  background-blend-mode: luminosity;
+  background-position: bottm;
+  background-size: 100%;
+  mask-image: linear-gradient(0deg, transparent 0%, rgb(0, 0, 0) 100%);
+  ;
+  opacity: 25%;
+}
+
 body {
-  font-family: Roboto;
+  font-family: Lato, sans-serif;
   font-size: 16px;
   line-height: 1.4em;
   /*margin: 90rem;*/
@@ -151,7 +185,6 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    
   }
 }
 
@@ -162,15 +195,41 @@ h2 {
 }
 
 text {
+  font-size: calc(1.5rem);
   text-wrap: pretty;
-  line-height: 1.5em;
+  line-height: 2em;
   display: block;
-  max-width: 65ch;
+  max-width: 45ch;
+}
+
+.button {
+  width: 20em;
+  padding: .7ch;
+  background: #6868A5;
+  border: none;
+  border-radius: .7ch;
+  filter: drop-shadow(0 0 0.55rem #6868a5);
+  &#discord {
+    background: #313338;
+    border: 2px solid #232428;
+    filter: none;
+  }
 }
 
 div#navbar {
-  width: 100%;
+  /*width: 100%;*/
+  z-index: 2;
+  position: absolute;
+  max-width: fit-content;
+  padding: 2ch;
+  border: 2px solid #16161D;
+  background: #0b0b0e; 
+  border-radius: 2ch;
   font-size: 1.5em;
+}
+
+div#content {
+  padding-top: 4em;
 }
 
 div#video iframe {
